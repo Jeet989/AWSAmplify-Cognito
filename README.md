@@ -40,7 +40,7 @@
 > Clone this repo to your local machine
 
 ```shell
-$ git clone https://github.com/Jeet989/AWSAmplify-Cognito.git
+git clone https://github.com/Jeet989/AWSAmplify-Cognito.git
 ```
 
 ### Setup
@@ -54,19 +54,19 @@ npm install
 > Install pod dependencies
 
 ```shell
-$ cd ios && pod install && cd ..
+cd ios && pod install && cd ..
 ```
 
 > Fetch latest backend environment
 
 ```shell
-$ amplify pull
+amplify pull
 ```
 
 > Run the mobile application
 
 ```shell
-$ npx react-native run-android
+npx react-native run-android
 ```
 
 ## Application Preview
