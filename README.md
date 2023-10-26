@@ -2,6 +2,11 @@
 
 > CognitoAmplify is a project used to demonstrate the use of AWS Cognito and Amplify in a React Native application. For this application I have utilized the AWS Amplify platform and Cognito to create a user authentication system. This application is a simple React Native application that allows users to sign up, & sign in with help of Social Login as Google and the traditional flow of email & password.
 
+## Application Preview
+
+<img width=33% src="./app_preview.gif">
+<br />
+
 ## Key Features of the Application
 
 - AWS Amplify
@@ -68,8 +73,3 @@ amplify pull
 ```shell
 npx react-native run-android
 ```
-
-## Application Preview
-
-<img width=33% src="./app_preview.gif">
-<br />
