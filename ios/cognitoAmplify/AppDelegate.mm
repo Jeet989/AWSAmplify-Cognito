@@ -3,7 +3,6 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTLinkingManager.h>
 
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -22,6 +21,7 @@
 {
   return [RCTLinkingManager application:application openURL:url options:options];
 }
+
 
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge

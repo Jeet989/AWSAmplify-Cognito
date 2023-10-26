@@ -1,6 +1,6 @@
 {
   "auth": {
-    "cognitoAmplifyDemo": {
+    "RNTesting": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -10,7 +10,7 @@
         ],
         "passwordProtectionSettings": {
           "passwordPolicyCharacters": [],
-          "passwordPolicyMinLength": 8
+          "passwordPolicyMinLength": 7
         },
         "signupAttributes": [],
         "socialProviders": [

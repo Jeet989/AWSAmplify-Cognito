@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Text, View, Linking, Button } from "react-native";
+import { Text, View, Button } from "react-native";
 
 import { Amplify, Auth, Hub } from "aws-amplify";
-import awsconfig from "./aws-exports";
+import awsconfig from './src/aws-exports'
 import { CognitoUser } from "amazon-cognito-identity-js";
 import { CognitoHostedUIIdentityProvider } from '@aws-amplify/auth';
 
@@ -40,7 +40,7 @@ export default function App() {
     if (err) {
       console.log('error inside getUserAttributes', err)
     } else {
-      console.log('result inside getUserAttributes', result, user)
+      console.log('result inside getUserAttributes', user.getSignInUserSession()?.getAccessToken().getJwtToken())
     }
   }))
 
@@ -52,7 +52,6 @@ export default function App() {
       <Button
         title="Open Amazon"
         onPress={() => {
-          // @ts-ignore
           Auth.federatedSignIn({
             provider: CognitoHostedUIIdentityProvider.Google,
           })
@@ -62,7 +61,7 @@ export default function App() {
       <Button title="Sign Out" onPress={() => {
         Auth.signOut({ global: true })
       }} />
-      <Text>{user && user.getUsername()}</Text>
+      <Text>{user && `Logged In User: ${user.getUsername()}`}</Text>
     </View>
   );
 }

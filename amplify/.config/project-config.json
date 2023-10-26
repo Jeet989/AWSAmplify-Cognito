@@ -2,13 +2,13 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "cognitoAmplifyDemo",
+  "projectName": "RNTesting",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "react-native",
     "config": {
-      "SourceDir": "/",
+      "SourceDir": "src",
       "DistributionDir": "/",
       "BuildCommand": "npm run-script build",
       "StartCommand": "npm run-script start"
