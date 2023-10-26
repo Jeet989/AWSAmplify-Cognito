@@ -48,7 +48,7 @@ $ git clone https://github.com/Jeet989/AWSAmplify-Cognito.git
 > Install npm packages
 
 ```shell
-$ npm install
+npm install
 ```
 
 > Install pod dependencies
