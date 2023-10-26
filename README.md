@@ -37,7 +37,11 @@
 
 ### Clone
 
-- Clone this repo to your local machine using `git clone https://github.com/Jeet989/AWSAmplify-Cognito.git`
+- Clone this repo to your local machine
+
+```shell
+$ git clone https://github.com/Jeet989/AWSAmplify-Cognito.git
+```
 
 ### Setup
 
